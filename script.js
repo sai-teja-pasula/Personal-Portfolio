@@ -1,8 +1,97 @@
-window.addEventListener('scroll', () => {
-  const nav = document.getElementById('navbar');
-  if (window.scrollY > 50) {
-    nav.style.background = '#222';
-  } else {
-    nav.style.background = '#444';
-  }
-});
+:root {
+  --navy: #0a192f;
+  --light-blue: #64ffda;
+  --text-light: #ccd6f6;
+  --background: #112240;
+  --card: #233554;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background: var(--background);
+  color: var(--text-light);
+}
+
+header {
+  background: var(--navy);
+  color: var(--light-blue);
+  padding: 60px 0;
+  text-align: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px 0;
+}
+
+nav {
+  background: var(--card);
+  text-align: center;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav a {
+  color: var(--light-blue);
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+section {
+  background: var(--card);
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  color: var(--light-blue);
+  margin-bottom: 10px;
+}
+
+.project {
+  margin-top: 10px;
+  padding-left: 10px;
+  border-left: 4px solid var(--light-blue);
+}
+
+.resume-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: var(--light-blue);
+  color: var(--navy);
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.resume-button:hover {
+  background-color: #52e0c4;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: var(--navy);
+  color: var(--light-blue);
+}

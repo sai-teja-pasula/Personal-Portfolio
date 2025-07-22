@@ -1,5 +1,8 @@
-// Example: Simple form alert
-document.querySelector("form").addEventListener("submit", function(e) {
-  e.preventDefault();
-  alert("Message sent successfully!");
+window.addEventListener('scroll', () => {
+  const nav = document.getElementById('navbar');
+  if (window.scrollY > 50) {
+    nav.style.background = '#222';
+  } else {
+    nav.style.background = '#444';
+  }
 });
